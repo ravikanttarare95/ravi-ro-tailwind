@@ -6,6 +6,11 @@ import FeaturedIcon1 from "./../public/torch.png";
 import FeaturedIcon2 from "./../public/skyline.png";
 import FeaturedIcon3 from "./../public/insulation.png";
 import FeaturedIcon4 from "./../public/ventilation.png";
+import SummaryCard from "./Components/SummaryCard.jsx";
+import SummaryCardPhoto1 from "./../public/summary-membrane.jpg";
+import SummaryCardPhoto2 from "./../public/summary-shingle.jpg";
+import SummaryCardPhoto3 from "./../public/summary-insulation.jpg";
+import { ButtonTertiary } from "./Components/Button.jsx";
 
 function App() {
   return (
@@ -29,8 +34,8 @@ function App() {
           </p>
         </div>
       </div>
-      <div>
-        <div className="w-200 text-center mx-auto my-25">
+      <div className="px-5">
+        <div className="max-w-200 text-center px-2 mx-auto my-10 sm:my-15 md:my-20">
           <h2 className="text-4xl mb-5">Featured Services</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
@@ -72,6 +77,28 @@ function App() {
             }
             btnTitle={"More Detail"}
           />
+        </div>
+      </div>
+      <div className="bg-blue-900 mt-10 py-15 px-5">
+        <h2 className="text-4xl text-center mb-15 text-white">
+          Project Summary
+        </h2>
+        <div className="flex justify-center flex-wrap gap-10 ">
+          <SummaryCard
+            SummaryCardHeading={"Liquid Urethara Membrane"}
+            SummaryCardPhoto={SummaryCardPhoto1}
+          />
+          <SummaryCard
+            SummaryCardHeading={"Shigle"}
+            SummaryCardPhoto={SummaryCardPhoto2}
+          />
+          <SummaryCard
+            SummaryCardHeading={"Insulation"}
+            SummaryCardPhoto={SummaryCardPhoto3}
+          />
+        </div>
+        <div className="pt-15 flex justify-center">
+          <ButtonTertiary btnTitle={"All Projects"} />
         </div>
       </div>
     </div>
