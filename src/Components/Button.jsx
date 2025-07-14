@@ -10,6 +10,16 @@ function Button({ btnTitle }) {
   );
 }
 
+function ButtonPrimary({ btnTitle }) {
+  return (
+    <>
+      <button className="bg-purple-700 text-white py-3 px-5 rounded-4xl text-xl cursor-pointer hover:-translate-y-1 hover:bg-purple-800 active:translate-y-1 duration-300">
+        {btnTitle}
+      </button>
+    </>
+  );
+}
+
 function ButtonSecondary({ btnTitle }) {
   return (
     <>
@@ -31,4 +41,4 @@ function ButtonTertiary({ btnTitle }) {
 }
 
 export default Button;
-export { ButtonSecondary, ButtonTertiary };
+export { ButtonPrimary, ButtonSecondary, ButtonTertiary };

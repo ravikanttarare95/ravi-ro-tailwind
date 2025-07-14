@@ -12,6 +12,9 @@ import SummaryCardPhoto2 from "./../public/summary-shingle.jpg";
 import SummaryCardPhoto3 from "./../public/summary-insulation.jpg";
 import { ButtonTertiary } from "./Components/Button.jsx";
 
+import MailImg from "./../public/mail-img.png";
+import ContactForm from "./Components/ContactForm.jsx";
+
 function App() {
   return (
     <div>
@@ -99,6 +102,14 @@ function App() {
         </div>
         <div className="pt-15 flex justify-center">
           <ButtonTertiary btnTitle={"All Projects"} />
+        </div>
+      </div>
+      <div className="flex flex-wrap justify-around my-20 px-5">
+        <div className="max-w-110">
+          <img src={MailImg} alt="Image" />
+        </div>
+        <div className="w-150">
+          <ContactForm />
         </div>
       </div>
     </div>
