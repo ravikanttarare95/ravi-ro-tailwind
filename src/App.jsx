@@ -18,7 +18,7 @@ import LoginForm from "./views/LoginForm.jsx";
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar active={"home"}/>
       <div className="relative w-full h-[40vh] sm:h-[60vh] md:h-[70vh] ">
         <img
           src={HeroImg}

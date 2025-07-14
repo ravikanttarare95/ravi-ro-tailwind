@@ -6,7 +6,7 @@ import Navbar from "../Components/Navbar";
 function LoginForm() {
   return (
     <div>
-      <Navbar />
+      <Navbar active={"login"} />
       <div className="flex justify-center items-center p-5 my-auto mt-20">
         <div className="relative p-8 sm:p-9 shadow-2xl bg-white rounded-md w-100 flex flex-col gap-5 text-center">
           <img
