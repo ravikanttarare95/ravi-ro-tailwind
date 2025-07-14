@@ -14,27 +14,27 @@ function Navbar({ active }) {
             <img
               src={BrandLogo}
               alt="Brand Logo"
-              className="invert-100 w-7 mr-3"
+              className="invert-100 w-10 mr-3  hover:scale-120 duration-300"
             />
           </Link>
           <ol className="flex max-w-[300px] w-[100%] justify-between">
             <li
               className={`cursor-pointer py-4 px-3 ${
-                active === "home" ? "bg-blue-900 text-white" : ""
+                active === "home" ? "bg-blue-800 text-white" : ""
               }`}
             >
               <Link to={"/"}>Home</Link>
             </li>
             <li
               className={`cursor-pointer py-4 px-3 ${
-                active === "service" ? "bg-blue-900 text-white" : ""
+                active === "service" ? "bg-blue-800 text-white" : ""
               }`}
             >
               <Link to={"/service"}>Service</Link>
             </li>
             <li
               className={`cursor-pointer py-4 px-3 ${
-                active === "projects" ? "bg-blue-900 text-white" : ""
+                active === "projects" ? "bg-blue-800 text-white" : ""
               }`}
             >
               <Link to={"/projects"}>Projects</Link>

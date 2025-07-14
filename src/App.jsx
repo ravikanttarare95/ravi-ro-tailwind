@@ -13,12 +13,11 @@ import SummaryCardPhoto3 from "./../public/summary-insulation.jpg";
 import Button from "./Components/Button.jsx";
 import MailImg from "./../public/mail-img.png";
 import ContactForm from "./Components/ContactForm.jsx";
-import LoginForm from "./views/LoginForm.jsx";
 
 function App() {
   return (
     <div>
-      <Navbar active={"home"}/>
+      <Navbar active={"home"} />
       <div className="relative w-full h-[40vh] sm:h-[60vh] md:h-[70vh] ">
         <img
           src={HeroImg}
@@ -41,9 +40,9 @@ function App() {
         <div className="max-w-200 text-center px-2 mx-auto my-10 sm:my-15 md:my-20">
           <h2 className="text-4xl mb-5">Featured Services</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            totam praesentium qui earum magnam porro molestias voluptatibus
-            voluptatem quo, fugit doloribus iste dolorem, similique molestiae!
+            Discover our comprehensive range of roofing solutions designed to
+            protect and enhance your property. From traditional installations to
+            modern roofing technologies, we deliver excellence in every project.
           </p>
         </div>
         <div className="flex justify-center flex-wrap gap-10">
@@ -51,7 +50,7 @@ function App() {
             FeaturedCardIcon={FeaturedIcon1}
             featuredCardHeading={"Torch-On Flooring"}
             featuredCardDesc={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              "Professional torch-on membrane installation for flat roofs, providing superior waterproofing and durability."
             }
             btnTitle={"More Detail"}
           />
@@ -59,7 +58,7 @@ function App() {
             FeaturedCardIcon={FeaturedIcon2}
             featuredCardHeading={"Skyline Installation & Repair"}
             featuredCardDesc={
-              "Lorem ipsum dolor sit amet consectetur amet sit amet  adipisicing elit."
+              "Expert skylight installation and maintenance services to brighten your space while ensuring perfect weatherproofing."
             }
             btnTitle={"More Detail"}
           />
@@ -67,7 +66,7 @@ function App() {
             FeaturedCardIcon={FeaturedIcon3}
             featuredCardHeading={"Insulation"}
             featuredCardDesc={
-              "Lorem ipsum dolor sit amet consectetur sit amet adipisicing elit."
+              "High-performance insulation solutions to improve your home's energy efficiency and comfort all year round."
             }
             btnTitle={"More Detail"}
           />
@@ -76,13 +75,13 @@ function App() {
             FeaturedCardIcon={FeaturedIcon4}
             featuredCardHeading={"Ventilation"}
             featuredCardDesc={
-              "Lorem ipsum dolor sit amet consectetur sit adipisicing elit."
+              "Advanced roofing ventilation systems to regulate temperature and moisture, extending your roof's lifespan."
             }
             btnTitle={"More Detail"}
           />
         </div>
       </div>
-      <div className="bg-blue-900 mt-10 py-15 px-5">
+      <div className="bg-gradient-to-r from-blue-900 to-blue-400 mt-10 py-15 px-5">
         <h2 className="text-4xl text-center mb-15 text-white">
           Project Summary
         </h2>
@@ -92,7 +91,7 @@ function App() {
             SummaryCardPhoto={SummaryCardPhoto1}
           />
           <SummaryCard
-            SummaryCardHeading={"Shigle"}
+            SummaryCardHeading={"Shingle"}
             SummaryCardPhoto={SummaryCardPhoto2}
           />
           <SummaryCard
@@ -106,7 +105,11 @@ function App() {
       </div>
       <div className="flex flex-wrap justify-around my-20 px-5">
         <div className="max-w-110">
-          <img src={MailImg} alt="Image" />
+          <img
+            src={MailImg}
+            alt="Image"
+            className="drop-shadow-xl drop-shadow-gray-400"
+          />
         </div>
         <div className="w-150">
           <ContactForm />

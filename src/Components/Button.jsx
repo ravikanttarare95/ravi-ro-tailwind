@@ -3,7 +3,7 @@ import React from "react";
 function Button({ btnTitle }) {
   return (
     <>
-      <button className="border-2 py-1 px-4 border-gray-300 text-gray-400 hover:bg-blue-900 cursor-pointer hover:text-white duration-300">
+      <button className="border-2 py-1 px-4 border-gray-400 text-gray-400 hover:bg-blue-900 cursor-pointer hover:text-white duration-300">
         {btnTitle}
       </button>
     </>
@@ -33,7 +33,7 @@ function ButtonSecondary({ btnTitle }) {
 function ButtonTertiary({ btnTitle }) {
   return (
     <>
-      <button className=" py-2 bg-blue-800 hover:bg-blue-900  rounded-sm text-white text-md hover:shadow-md cursor-pointer duration-300">
+      <button className=" py-2 bg-blue-700 hover:bg-blue-800  rounded-sm text-white text-md hover:shadow-md cursor-pointer duration-300">
         {btnTitle}
       </button>
     </>
