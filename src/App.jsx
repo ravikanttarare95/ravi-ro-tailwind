@@ -13,7 +13,7 @@ import SummaryCardPhoto3 from "./../public/summary-insulation.jpg";
 import Button from "./Components/Button.jsx";
 import MailImg from "./../public/mail-img.png";
 import ContactForm from "./Components/ContactForm.jsx";
-import LoginForm from "./Components/LoginForm.jsx";
+import LoginForm from "./views/LoginForm.jsx";
 
 function App() {
   return (

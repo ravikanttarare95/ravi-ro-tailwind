@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonTertiary } from "./Button";
+import { ButtonTertiary } from "./../Components/Button";
 import ProfileIcon from "./../../public/profile.png";
 
 function LoginForm() {
