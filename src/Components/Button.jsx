@@ -33,7 +33,7 @@ function ButtonSecondary({ btnTitle }) {
 function ButtonTertiary({ btnTitle }) {
   return (
     <>
-      <button className="border-2 py-1 max-w-110 w-[100%] border-gray-300 text-gray-400 hover:shadow-xl cursor-pointer hover:text-white duration-300">
+      <button className=" py-3 bg-blue-800 hover:bg-blue-900  rounded-sm text-white text-lg hover:shadow-md cursor-pointer duration-300">
         {btnTitle}
       </button>
     </>

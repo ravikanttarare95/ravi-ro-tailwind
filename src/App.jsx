@@ -10,10 +10,10 @@ import SummaryCard from "./Components/SummaryCard.jsx";
 import SummaryCardPhoto1 from "./../public/summary-membrane.jpg";
 import SummaryCardPhoto2 from "./../public/summary-shingle.jpg";
 import SummaryCardPhoto3 from "./../public/summary-insulation.jpg";
-import { ButtonTertiary } from "./Components/Button.jsx";
-
+import Button from "./Components/Button.jsx";
 import MailImg from "./../public/mail-img.png";
 import ContactForm from "./Components/ContactForm.jsx";
+import LoginForm from "./Components/LoginForm.jsx";
 
 function App() {
   return (
@@ -100,8 +100,8 @@ function App() {
             SummaryCardPhoto={SummaryCardPhoto3}
           />
         </div>
-        <div className="pt-15 flex justify-center">
-          <ButtonTertiary btnTitle={"All Projects"} />
+        <div className="pt-15 flex justify-center flex-col max-w-110 mx-auto">
+          <Button btnTitle={"All Projects"} />
         </div>
       </div>
       <div className="flex flex-wrap justify-around my-20 px-5">
@@ -112,6 +112,8 @@ function App() {
           <ContactForm />
         </div>
       </div>
+
+      <LoginForm />
     </div>
   );
 }
