@@ -112,8 +112,6 @@ function App() {
           <ContactForm />
         </div>
       </div>
-
-      <LoginForm />
     </div>
   );
 }

@@ -5,9 +5,9 @@ import { Link } from "react-router";
 
 function Navbar() {
   return (
-    <div>
-      <nav className="flex justify-around flex-wrap items-center p-4 shadow-lg border-b-1 border-gray-400 font-semibold">
-        <div className="flex items-center w-[350px] justify-between">
+    <div className="sticky top-0 z-1000 opacity-92">
+      <nav className="bg-white text-lg flex justify-around flex-wrap items-center p-5 shadow-lg border-b-1 border-gray-400 font-semibold">
+        <div className="flex items-center w-[400px] justify-between">
           {" "}
           <Link to={"/"}>
             {" "}
@@ -17,7 +17,7 @@ function Navbar() {
               className="invert-100 w-7 mr-3"
             />
           </Link>
-          <ol className="flex max-w-[270px] w-[100%] justify-between">
+          <ol className="flex max-w-[300px] w-[100%] justify-between">
             <li className="cursor-pointer">
               <Link to={"/"}>Home</Link>
             </li>
@@ -29,8 +29,12 @@ function Navbar() {
             </li>
           </ol>
         </div>
-        <div className="flex items-center gap-1 ml-7 w-16  cursor-pointer">
-          <LogIn /> Login
+        <div>
+          <Link to={"/login"}>
+            <span className="flex items-center gap-1 ml-7 w-16  cursor-pointer">
+              <LogIn /> Login
+            </span>
+          </Link>
         </div>
       </nav>
     </div>

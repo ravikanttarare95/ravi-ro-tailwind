@@ -5,7 +5,9 @@ function Service() {
   return (
     <div>
       <Navbar />
-      <h1>Service</h1>
+      <h1 className="text-[clamp(4rem,10vw,8rem)] fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+        Service
+      </h1>
     </div>
   );
 }

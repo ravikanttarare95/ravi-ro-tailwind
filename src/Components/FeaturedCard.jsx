@@ -8,7 +8,7 @@ function FeaturedCard({
   btnTitle,
 }) {
   return (
-    <div className="p-5 w-70 flex flex-col items-center justify-between gap-10 text-center shadow-xl rounded-lg">
+    <div className="bg-white p-5 w-70 flex flex-col items-center justify-between gap-10 text-center shadow-xl rounded-lg">
       <div className="flex flex-col items-center gap-10">
         <img
           src={FeaturedCardIcon}
