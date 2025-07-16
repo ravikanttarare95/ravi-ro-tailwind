@@ -23,7 +23,7 @@ function Projects() {
     {
       title: "Eco-Friendly Housing",
       image: SummaryCardPhoto3,
-      category: "Insulation",
+      category: "Insulation", 
       description:
         "Energy-efficient insulation for sustainable housing project",
     },

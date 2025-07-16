@@ -5,8 +5,8 @@ import { Link } from "react-router";
 
 function Navbar({ active }) {
   return (
-    <div className="sticky top-0 z-1000 opacity-92">
-      <nav className="bg-white text-lg flex justify-around flex-wrap items-center px-5 shadow-lg border-b-1 border-gray-400 font-semibold">
+    <>
+      <nav className="sticky top-0 z-1000 backdrop-blur-sm bg-white/80 text-lg flex justify-around flex-wrap items-center px-5 shadow-lg border-b-1 border-gray-400 font-semibold">
         <div className="flex items-center w-[400px] justify-between">
           {" "}
           <Link to={"/"}>
@@ -52,7 +52,7 @@ function Navbar({ active }) {
           </Link>
         </div>
       </nav>
-    </div>
+    </>
   );
 }
 
