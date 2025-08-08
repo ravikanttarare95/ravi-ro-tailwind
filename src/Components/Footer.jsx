@@ -17,26 +17,41 @@ function Footer() {
           <div className="w-full md:w-1/3">
             <h3 className="text-xl font-bold mb-4">Contact Info</h3>
             <div className="flex flex-col gap-2 text-gray-300">
-              <p className="flex items-center gap-2">
+              <a
+                href="tel:8275957698"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-purple-400"
+              >
                 <Phone size={20} /> +91-8275957698
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+              <a
+                href="mailto:ravikantarare2001@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-purple-400"
+              >
                 <Mail size={20} /> ravikantatare2001@gmail.com
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+              <a
+                href="https://maps.app.goo.gl/6KCefMroHUG6pv8A7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-purple-400"
+              >
                 <MapPin size={20} /> Bhaldalkar Nagar, Shewalewadi, Pune
-              </p>
+              </a>
             </div>
           </div>
           <div className="w-full md:w-1/4">
             <h3 className="text-xl font-bold mb-4">Follow Project</h3>
             <a
               href="https://github.com/ravikanttarare95/ravi-ro-tailwind.git"
-              className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+              className="group flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
               target="_blank"
               rel="noopener noreferrer" ////////////////
             >
-              <Github size={20} />
+              <Github size={20} className="group-hover:scale-120 duration-300" />
               View on GitHub
             </a>
           </div>
