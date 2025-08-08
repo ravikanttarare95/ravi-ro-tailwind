@@ -23,7 +23,7 @@ function Projects() {
     {
       title: "Eco-Friendly Housing",
       image: SummaryCardPhoto3,
-      category: "Insulation", 
+      category: "Insulation",
       description:
         "Energy-efficient insulation for sustainable housing project",
     },
@@ -43,11 +43,13 @@ function Projects() {
                 key={index}
                 className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                />
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 <div className="p-6">
                   <span className="text-blue-600 text-sm font-semibold">
                     {project.category}
